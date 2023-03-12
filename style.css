@@ -4,16 +4,16 @@ body{
     margin: 0 10%;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
-
-body:hover .icon{
-    visibility: visible;
+p{margin: 0;}
+h3{margin: 10px;}
+button{right: 10px;}
+.wrapper{color: #0059d9;}
+.title{
+    border-top: 1px solid #c0c0c0;
+    display: flex;
+    width: 100%;
 }
-
-h3{
-    margin: 10px;
-}
-
-img.meme{
+.meme{
     visibility: hidden;
     height: 0;
     max-height: 100px;
@@ -23,12 +23,15 @@ img.meme{
     margin: auto;
     padding: 10px 0;
 }
-
-img.icon{
+.icon{
     visibility: hidden;
     height: 1em;
     width: 1em;
     float: right;
+}
+
+body:hover .icon{
+    visibility: visible;
 }
 
 .wrapper:active img.icon{
@@ -38,23 +41,13 @@ img.icon{
     transform: rotate(45deg);
 }
 
-.title{
-    border-top: 1px solid #c0c0c0;
-    display: flex;
-    width: 100%;
-}
-
-button{
-    right: 10px;
-}
-
 .wrapper:hover .meme{
     visibility: visible;
     height: auto;
 }
 
-p{
-    margin: 0;
+.wrapper:hover{
+    color: black;
 }
 
 img.visible{
@@ -62,7 +55,7 @@ img.visible{
     height:auto;
 }
 
-.wrapper:active .visible{
+.wrapper:active img.visible{
     visibility: hidden;
     height: 0;
 }
